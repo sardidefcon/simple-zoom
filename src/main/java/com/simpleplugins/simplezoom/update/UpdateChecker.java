@@ -109,7 +109,7 @@ public final class UpdateChecker {
                 .append(Component.text("Click here to download it")
                         .color(NamedTextColor.YELLOW)
                         .decorate(net.kyori.adventure.text.format.TextDecoration.UNDERLINED)
-                        .clickEvent(ClickEvent.openUrl(URI.create(projectUrl))));
+                        .clickEvent(ClickEvent.openUrl(projectUrl)));
 
         Bukkit.getOnlinePlayers().stream()
                 .filter(p -> p.hasPermission("szoom.reload") || p.isOp())
