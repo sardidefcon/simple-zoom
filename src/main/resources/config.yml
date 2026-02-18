@@ -1,0 +1,28 @@
+##############################
+# SimpleZoom - Configuration
+# Developed by sardidefcon
+##############################
+
+# Prefix for plugin messages. Use & for color codes.
+prefix: "&7[&6Zoom&7] &r"
+
+# Check for updates on startup (Modrinth). When a new version is available, a message is shown in console and to admins.
+check-updates: true
+
+# --- Removal options ---
+# At least ONE must be true or the plugin will not load.
+# When any trigger fires, the spyglass is removed and the previous off-hand item is restored (with all its data: enchantments, custom name, shield design, etc.)
+
+# Remove spyglass when player moves (default: true)
+remove-on-move: true
+# Remove spyglass when player switches hotbar slot (default: true)
+remove-on-hotbar-switch: true
+# Remove spyglass when player releases right-click / stops zooming (default: false)
+remove-on-stop-zoom: false
+
+# Messages (support color codes with &)
+messages:
+  no-permission: "&cYou do not have permission to use this command"
+  player-only: "&cThis command can only be executed by a player"
+  reload-success: "&aConfiguration reloaded successfully"
+  reload-no-permission: "&cYou do not have permission to reload the configuration"

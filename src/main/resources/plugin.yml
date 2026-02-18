@@ -1,0 +1,19 @@
+name: SimpleZoom
+version: 1.0.2
+main: com.simpleplugins.simplezoom.SimpleZoom
+api-version: '1.21'
+author: sardidefcon
+description: Simple Zoom plugin for Paper/Spigot - gives spyglass to off hand for zoom
+
+commands:
+  zoom:
+    description: Puts a spyglass in your off hand for zooming. Use 'reload' to reload config.
+    usage: /<command> [reload]
+
+permissions:
+  szoom.use:
+    description: Allows using /zoom to get a spyglass in off hand
+    default: op
+  szoom.reload:
+    description: Allows using /zoom reload to reload configuration
+    default: op
