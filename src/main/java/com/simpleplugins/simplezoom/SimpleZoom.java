@@ -24,6 +24,7 @@ public final class SimpleZoom extends JavaPlugin {
     @Override
     public void onEnable() {
         saveDefaultConfig();
+        ConfigUpdater.mergeWithDefaults(this);
 
         if (!validateRemovalOptions()) {
             getLogger().severe("At least one removal option must be enabled (remove-on-move, remove-on-hotbar-switch, remove-on-stop-zoom). Disabling plugin.");

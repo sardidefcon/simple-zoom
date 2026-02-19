@@ -1,5 +1,6 @@
 package com.simpleplugins.simplezoom.command;
 
+import com.simpleplugins.simplezoom.ConfigUpdater;
 import com.simpleplugins.simplezoom.SimpleZoom;
 import com.simpleplugins.simplezoom.zoom.ZoomManager;
 import net.kyori.adventure.text.Component;
@@ -33,6 +34,7 @@ public final class ZoomCommand implements CommandExecutor {
                 sendMessage(sender, getMessage("reload-no-permission"));
                 return true;
             }
+            ConfigUpdater.mergeWithDefaults(plugin);
             plugin.reloadConfig();
             sendMessage(sender, getMessage("reload-success"));
             return true;
